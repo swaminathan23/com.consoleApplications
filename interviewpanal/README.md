@@ -32,5 +32,5 @@ Data Storage: Data is stored in memory during runtime for efficient processing.U
 ## To run project
 bash
 ```
-kuuik
+https://github.com/swaminathan23/com.consoleApplications.git
 ```
