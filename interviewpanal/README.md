@@ -6,7 +6,7 @@ This is designed to process the candidate for Interview and Managing candidate a
 
 # Screenshots
 
-![Interface](com.interview/Screenshot (50).png)
+![Interface](com.interview/Screenshot(50).png)
 
 
 ## Features
