@@ -5,6 +5,12 @@ Library Management console application .
 This is designed to streamline a library operation. This system follows Model-View pattern with data stored in list and Json.
 ## Screenshots
 ![Interface](com.lib/Screenshot(55).png)
+![Interface](com.lib/Screenshot(56).png)
+![Interface](com.lib/Screenshot(57).png)
+![Interface](com.lib/Screenshot(58).png)
+![Interface](com.lib/Screenshot(59).png)
+![Interface](com.lib/Screenshot(61).png)
+
 ## Features
 
 - Access login(verify Access).
