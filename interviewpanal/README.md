@@ -23,7 +23,8 @@ This is designed to process the candidate for Interview and Managing candidate a
 - Manage queue 
 - Json using file .
 
-
+## Data Handling
+Data Storage: Data is stored in memory during runtime for efficient processing.Upon program exit, data is serialized to JSON format using the Gson library and stored in a text file, ensuring data persistence across sessions.
 
 ## Tech Stack
 - java
