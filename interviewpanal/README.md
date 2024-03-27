@@ -29,3 +29,8 @@ Data Storage: Data is stored in memory during runtime for efficient processing.U
 ## Tech Stack
 - java
  IDE:eclipse
+## To run project
+bash
+```
+kuuik
+```
