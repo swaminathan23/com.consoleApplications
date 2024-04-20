@@ -23,7 +23,7 @@ public class LoginView {
 			String password = s.next();
 			loginModel.validateUser(userName, password);
 			System.out.println(
-					" enter \n 1 for login\n2 for changing password\n 3 to end session\nenter your option(int)  ");
+					" -----enter \n 1 for login\n 2 for changing password\n 3 to end session-----\nenter your option(int)  ");
 			int a = s.nextInt();
 			if (a == 1) {
 				loginModel.enter();

@@ -56,7 +56,7 @@ public class PanalView {
 //	}
 
 	public void init() {
-		System.out.println("enter your name");
+		System.out.println("enter Panel name");
 		String panalName = s.next();
 		panalName = checkName(panalName);
 
@@ -70,11 +70,11 @@ public class PanalView {
 	}
 
 	public void panalSetupComplete() {
-		System.out.println("----" + PanalSetup.getInstance().getPanalName() + "----"
+		System.out.println("\n----" + PanalSetup.getInstance().getPanalName() + "----"
 				+ PanalSetup.getInstance().getPanalDate() + "---");
 		while (true) {
-			System.out.println("\n enter\n 1 for adding candidate" + "\n 2 for view candidate" + "\n 3 for view queue"
-					+ "\n 4 to send candidate" + "\n 5 for exit \n 6 for logout\n 7 for deleting data");
+			System.out.println("\n enter\n 1. adding candidate" + "\n 2. view candidate" + "\n 3. view queue"
+					+ "\n 4. send candidate" + "\n 5. exit \n 6. logout\n 7. deleting data");
 			int a = s.nextInt();
 			if (a == 1) {
 				CandidateView candidate = new CandidateView();

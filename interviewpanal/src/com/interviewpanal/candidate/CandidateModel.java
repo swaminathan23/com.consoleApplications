@@ -32,11 +32,16 @@ public class CandidateModel {
 		
 	}
 	void checkEmailForMulti(String email){
+		int a=0;
 		List<Candidate> candidate=DataLayer.getInstance().sendList();
 		for(Candidate c:candidate) {
+			a=1;
 			if(email.equals(c.getCandidateEmailId())) {
 				candidateView.checkEmail(candidateView.name());
 			}
+		}
+		if(a==0) {
+			candidateView.enterString("email already exist");
 		}
 	}
 void changestatus(String name,String email) {
@@ -55,16 +60,18 @@ public void printingCandidate() {
 	int i=1;
 	candidateView.enterString("si.no: candidate Name:   candidate email:   candidate status:");
 	for (Candidate c : candidate) {
-		candidateView.enterString(i++ +"   "+  c.getCandidaterName() +  "  "+ c.getCandidateEmailId()
-		+"   "+c.getStatus());
+		candidateView.enterString(i++ +"       "+  c.getCandidaterName() +"        "+ c.getCandidateEmailId()
+		+"       "+c.getStatus());
 	}
 }
 public void remaining() {
 	ArrayDeque<Candidate> candidate = DataLayer.getInstance().remaincandidate();
+	if(candidate.size()==0) {candidateView.enterString("no candidate for interview");
+	return;}
 	candidateView.enterString("si.no: candidate Name:   candidate email:");
 	int i=1;
 	for (Candidate c : candidate) {
-		candidateView.enterString(i++ +"    " + c.getCandidaterName() + "  "+ c.getCandidateEmailId());
+		candidateView.enterString(i++ +"       " + c.getCandidaterName() + "     "+ c.getCandidateEmailId());
 	}
 }
 	public void sendCandidate1() {
